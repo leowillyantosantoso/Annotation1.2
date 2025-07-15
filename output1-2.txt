@@ -1,0 +1,1380 @@
+🔍 Parsing CellML file: Hodgkin_Huxley_1952.cellml
+[Debug] First 200 chars of CellML file:
+ <?xml version='1.0' encoding='UTF-8'?>
+<model cmeta:id="hodgkin_huxley_squid_axon_1952" name="hodgkin_huxley_squid_axon_1952" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.
+[Warning] Issues found during parsing:
+  - Given model is a CellML 1.1 model, the parser will try to represent this model in CellML 2.0.
+  - Model 'hodgkin_huxley_squid_axon_1952' ignoring child element 'documentation'.
+  - Model 'hodgkin_huxley_squid_axon_1952' ignoring child element 'RDF'.
+  - Connection in model 'hodgkin_huxley_squid_axon_1952' between 'membrane' and 'sodium_channel' is not unique.
+  - Connection in model 'hodgkin_huxley_squid_axon_1952' between 'potassium_channel' and 'potassium_channel_n_gate' is not unique.
+  - Connection in model 'hodgkin_huxley_squid_axon_1952' between 'sodium_channel' and 'sodium_channel_h_gate' is not unique.
+  - Connection in model 'hodgkin_huxley_squid_axon_1952' between 'leakage_current' and 'membrane' is not unique.
+[Debug] Model has 5 components.
+✅ Found 30 variables:
+  - membrane.i_K (units: microA_per_cm2, init: , cmeta_id: membrane.i_K)
+  - membrane.i_Stim (units: microA_per_cm2, init: , cmeta_id: membrane.i_Stim)
+  - membrane.time (units: millisecond, init: , cmeta_id: membrane.time)
+  - membrane.V (units: millivolt, init: , cmeta_id: membrane_V)
+  - membrane.i_L (units: microA_per_cm2, init: , cmeta_id: membrane.i_L)
+  - membrane.i_Na (units: microA_per_cm2, init: , cmeta_id: membrane.i_Na)
+  - membrane.E_R (units: millivolt, init: , cmeta_id: membrane.E_R)
+  - membrane.Cm (units: microF_per_cm2, init: , cmeta_id: membrane.Cm)
+  - environment.time (units: millisecond, init: , cmeta_id: environment_time)
+  - leakage_current.E_L (units: millivolt, init: , cmeta_id: leakage_current.E_L)
+  - leakage_current.g_L (units: milliS_per_cm2, init: , cmeta_id: leakage_current.g_L)
+  - leakage_current.time (units: millisecond, init: , cmeta_id: leakage_current.time)
+  - leakage_current.i_L (units: microA_per_cm2, init: , cmeta_id: leakage_current_i_L)
+  - leakage_current.E_R (units: millivolt, init: , cmeta_id: leakage_current.E_R)
+  - leakage_current.V (units: millivolt, init: , cmeta_id: leakage_current.V)
+  - sodium_channel.m (units: dimensionless, init: , cmeta_id: sodium_channel.m)
+  - sodium_channel.E_R (units: millivolt, init: , cmeta_id: sodium_channel.E_R)
+  - sodium_channel.time (units: millisecond, init: , cmeta_id: sodium_channel.time)
+  - sodium_channel.g_Na (units: milliS_per_cm2, init: , cmeta_id: sodium_channel.g_Na)
+  - sodium_channel.E_Na (units: millivolt, init: , cmeta_id: sodium_channel.E_Na)
+  - sodium_channel.V (units: millivolt, init: , cmeta_id: sodium_channel.V)
+  - sodium_channel.h (units: dimensionless, init: , cmeta_id: sodium_channel.h)
+  - sodium_channel.i_Na (units: microA_per_cm2, init: , cmeta_id: sodium_channel_i_Na)
+  - potassium_channel.E_K (units: millivolt, init: , cmeta_id: potassium_channel.E_K)
+  - potassium_channel.g_K (units: milliS_per_cm2, init: , cmeta_id: potassium_channel.g_K)
+  - potassium_channel.n (units: dimensionless, init: , cmeta_id: potassium_channel.n)
+  - potassium_channel.time (units: millisecond, init: , cmeta_id: potassium_channel.time)
+  - potassium_channel.E_R (units: millivolt, init: , cmeta_id: potassium_channel.E_R)
+  - potassium_channel.V (units: millivolt, init: , cmeta_id: potassium_channel.V)
+  - potassium_channel.i_K (units: microA_per_cm2, init: , cmeta_id: potassium_channel_i_K)
+
+📖 Parsing PDF file: jphysiol.pdf
+
+📑 Matched Sentences (178):
+  - Our experiments suggest that gNa and 9E are functions of time and
+membrane potential, but that ENa, EK, El, CM and g, may be taken as
+constant.
+  - In order to decide whether these
+effects are sufficient to account for complicated phenomena such as the action
+potential and refractory period, it is necessary to obtain expressions relating
+MEMBRANE CURRENT IN NERVE
+the sodium and potassium conductances to time and membrane potential.
+  - Outside
+T
+INT
+TK
+ItE
+CM
+~~~~~
+~+
++
+Inside
+)
+Fig.
+  - RNw and RK vary with time and membrane potential; the other components are constant.
+  - At a fixed depolarization the sodium current follows a time course whose form is inde-
+pendent of the current through the membrane.
+  - If the sodium concentration is such that ENaB<E, the sodium current is inward; if it is reduced until
+ENa > E the current changes in sign but still appears to follow the same time
+course.
+  - Since we now know that the sodium current takes an appreciable time to reach its maximum, it is necessary to suppose that there are more carriers and that they react or move more slowly.
+  - The proportion of the time that each of the charged molecules spends at the
+inside is determined by exp -E/25 so that the proportion of sites at which all
+six are at the inside is exp - E/4.17.
+  - Details of the mechanism will probably not be settled for some time, but it seems difficult to escape the conclusion that the changes in ionic permeability depend on the movement of some component of the membrane which behaves as though it had a large charge or dipole moment.
+  - Thus
+I = CM d+ i,
+(1)
+5,.4
+MEMBRANE CURRENT IN NERVE
+where
+I is the total membrane current density (inward current positive);
+Ii is the ionic current density (inward current positive);
+V is the displacement of the membrane potential from its resting value
+(depolarization negative);
+CM is the membrane capacity per unit area (assumed constant);
+t is time.
+  - The justification for this equation is that it is the simplest which can be used
+and that it gives values for the membrane capacity which are independent of
+the magnitude or sign of V and are little affected by the time course of V (see,
+for example, table 1 of Hodgkin et al.
+  - (1)) is provided
+by the similarity between ionic currents measured with dV= 0 and those
+dV~~~~~~~~~d
+calculated from-CM dt with I= 0 (Hodgkin et al.
+  - There is no simple way of
+estimating the error introduced by this approximation, but it is not thought
+to be large since the time course of the capacitative surge was reasonably close
+to that calculated for a perfect condenser (Hodgkin et al.
+  - For practical application it is convenient to write these
+equations in the form
+INa=gNa (V-VNa)
+(3)
+IK
+9EK (V-VK),
+4
+Itl91 (VV-Vl),
+(5)
+505,A
+506
+A.
+  - HUXLEY
+where
+V=E-Er,
+VNa = ENa -Er,
+VK=EK-Er,
+VI=Ei-Er,
+and Er is the absolute value of the resting potential.
+  - V VgN, VK and VI can
+then be measured directly as displacements from the resting potential.
+  - The ionic conductances
+The discussion in Part I shows that there is little hope of calculating the
+time course of the sodium and potassium conductances from first principles.
+  - (11) with the following parameters:
+Curve A
+Curve B
+(V= -25 mV)
+(V=0)
+9qKo
+0 09 m.mho/cm2
+7.0 m.mho/Cm2
+9gOo
+7-06 m.mho/cm2
+009 m.mho/cm'
+n075 msec
+1 1 msec
+At the outset there is the difficulty that both sodium and potassium con-
+ductances increase with a delay when the axon is depolarized but fall with no
+appreciable infiexion when it is repolarized.
+  - The potassium conductance
+The formal assumptions used to describe the potassium conductance are:
+- n4
+(6)
+dn
+ddn=n (1-n)-Bnn,
+(7 )
+where g
+is a constant with the dimensions of conductance/cm2, cx and /n
+are rate constants which vary with voltage but not with time and have
+dimensions of [time]-', n is a dimensionless variable which can vary between
+0 and 1.
+  - n represents the proportion ofthe particles in a certain
+position (for example at the inside of the membrane) and 1- n represents
+the proportion that are somewhere else (for example at the outside of the
+membrane).
+  - In the resting state, defined by V = 0, n has a resting value given by
+anO
+no-n + finO'
+If V is changed suddenly can and n instantly take up values appropriate to the
+new voltage.
+  - The solution of (7) which satisfies the boundary condition that
+n=no when t=O is
+n=na,,-(nn-no) exp (-t/rn),
+(8)
+where
+no, = an/(Xn + fAn)
+(9)
+and
+rTn =l/(An + n).
+  - A
+15
+100
+-B
+10
+8
+E
+4,J
+_
+~
+~~~~~~~
+c
+'5
+-V ~~~ ~
+~
+~
+~
+~
+~
+~
+~ ~~~o
+10
+-C
+0~~~~~~~~~~~~~~
+1 _1
+F
+E
+L
+E~~~~~~~~~~~~~~
+co
+0
+3
+n
+1
+2 3
+4
+s
+6
+7
+8
+9
+10
+11msec6
+0
+0~
+Fig.
+  - (11) with 9KO==0 24 m.mho/cm2 and other parameters as shown in Table 1.
+  - The time
+scale applies to all records.
+  - The rate constants an and f,n.
+  - 3
+v
+9KO
+n,x,
+Tnpnfn
+(mV)
+(m.mho/cm')
+(msec)
+(msec-1)
+(msec'L)
+Curve
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+-
+(-0c)
+(24.31)
+(1-000)
+-
+A
+- 109
+20*70
+0*961
+1.05
+0.915
+0 037
+B
+- 100
+20-00
+0.953
+1-10
+0*866
+0*043
+C
+- 88
+18-60
+0*935
+1*25
+0*748
+0-052
+D
+- 76
+17-00
+0*915
+1.50
+0*610
+0 057
+E
+- 63
+15-30
+0-891
+1-70
+0*524
+0 064
+F
+- 51
+13*27
+0.859
+2-05
+0*419
+0-069
+G
+- 38
+10*29
+0*806
+2;60
+0.310
+0*075
+H
+- 32
+8-62
+0*772
+3 20
+0-241
+0-071
+I
+- 26
+6*84
+0-728
+3-80
+0*192
+0-072
+J
+-
+19
+5*00
+0*674
+4 50
+0.150
+0*072
+K
+- 10
+1*47
+0*496
+5-25
+0 095
+0*096
+L
+-
+6
+0*98
+0.448
+5-25
+0*085
+0*105
+(0)
+(0.24)
+(0-315)
+-
+-
+Col.
+  - 4, time constant used to compute curve; col.
+  - 5,
+n,.
+  - 6, fin =(1 - n0)/v,,.
+  - For the purpose of calculation we assume that n=1 at the asymptote which
+is taken as about 20% greater than the value Of 9gK0
+at V =-100 mV.
+  - = 20 m.mho/cm2
+at V = -100 mV.
+  - 9E was therefore chosen to be near 24 m.mho/cm2.
+  - The rate constants
+derived from these parameters were (in msec-1): o= 021, f,n-
+= 070 when
+V=0 and ocn= 0 90, fin= 043 when V= -25 mV.
+  - In order to find functions connecting Ocn and fiP with membrane potential we
+collected all our measurements and plotted them against V, as in Fig.
+  - The continuous
+curves, which are clearly a good fit to the experimental data, were calculated
+from the following expressions:
+0X=001 (V + 10)exp
+0
+-
+(12)
+n ~
+O/L
+10
+~,(2
+Pn=0 125 exp (V/80),
+(13)
+where an and fin are given in reciprocal msec and V is the displacement of the
+membrane potential from its resting value in mV.
+  - These expressions should also give a satisfactory formula for the steady
+potassium conductance (gK-) at any membrane potential (V), for this relation
+is implicit in the measurement of xn and fin.
+  - 4 shows that fin is small compared to an over most of the range; we
+therefore do not attach much weight to the curve relating fin to V and have
+used the simplest expression which gave a reasonable fit.
+  - Our equations can therefore be given a qualitative physical
+basis if it is supposed that the variation of oc and fi with membrane potential
+arises from the effect of the;; electric field on the movement of a negatively
+charged particle which rests on the outside of the membrane when V is large
+and positive, and on the inside when it is large and negative.
+  - Better agreement might
+510
+MEMBRANE CURRENT IN NERVE
+et n
+/8,
+Axon
+v
+v
+15
+o
+*
+17
+o~ *
+18
+o
+*
+20
+A A
+21
+x
+23
++
+24
+"
+26
+-110-100-90-80-70--60-50-40-30-20-10
+0
+10
+20
+30
+40
+50
+V(mV)
+Fig.
+  - All values for V < 0 were
+obtained by the method illustrated by Fig.
+  - 3 and Table 1; those for V> 0 were obtained
+from the decline of potassium conductance associated with an increase ofmembrane potential
+or from repolarization to the resting potential in choline sea water (e.g.
+  - Axon
+1
+01~
+~~~
+~ ~~~~~~~~~~~0
+2
+0t
+Fe
+A
+21
+-036
+-
+0-5
+-
+~
+~
+~
+~
+~
+0-4
+-
+0-3
+-
+0-1 _
+-110-100-90-80 -70 -60 -50-40 -30-2o0-10
+0 +10 +20 +30+40 +50+60
+V (mV)
+Fig.
+  - Ordinate: experi-
+mental measurements of n, calculated from the steady potassium conductance by the
+relation n.
+  - 1.0
+0*9
+_ 08
+N4
+0-7
+E
+c 06
+0
+2'
+04
+0V
+a-v 0,4
+0
+0-3
+0-2
+01
+0
+ccn
+A.
+  - The formal assumptions made are:
+gNa=-- n0hgNa,
+(14)
+diJm (1-m)-Pmm,
+(15)
+dt =
+(1-h)-#,%hi
+(16)
+where 9Na is a constant and the oc's and P's are functions of V but not of t.
+  - m then represents the proportion of
+activating molecules on the inside and 1-rn the proportion on the outside;
+h is the proportion of inactivating molecules on the outside and 1-h the
+proportion on the inside.
+  - a,m or # and Pm or Oh represent the transfer rate
+constants in the two directions.
+  - (15) and (16) which satisfy the boundary conditions
+m=mo and h=ho at t=0 are
+M=m,0-(mo-mo) exrp (tm)(17)
+h=h.-(h.
+  - -ho) exp (-t/lrh),
+(18)
+where
+m
+or/(oc, + fl)
+and
+Tmm=l/(am+fPm)9
+h> =(I/(Ch +Ph)
+and
+Th = I/(h +Ph)-
+In the resting state the sodium conductance is very small compared with the
+value attained during a large depolarization.
+  - Further, inactivation is very nearly
+complete if V < -30 mV so that h., may also be neglected.
+  - The smooth curves are theoretical curves with parameters shown in Table 2;
+A to H drawn from eqn.
+  - 19, I to L from 14, 17, 18 with gN, = 70*7 m.mho/cm2.
+  - The ordinate
+scales on the right are given in m.mho/cm2.
+  - The time scale applies to all curves.
+  - ho and is the value which the sodium conductance would
+attain if h remained at its resting level (ho).
+  - (19) was fitted to an experi-
+mental curve by plotting the latter on double log paper and comparing it with
+a similar plot of a family of theoretical curves drawn with different ratios of
+.m to rh.
+  - Curves A to H in Fig.
+  - HUXLEY
+0000~~~M mm
+00
+_ ~
+~
+~
+~~~a to=08
+-
+_~
+~
+~
+~
+~~~o
+m
+_
+CaC
+0
+_
+xo
+0 ~
+~
+~
+0
+cq ~
+~
+00c
+Ca
+El~~~~~~~~~~~~~~~~C
+~8 10 o os
+'4a
+0
+<
+o
+o
+Lo_ oto _o
+o
+oo
+_o
+C
+Q
+Co r
+ce
+oo
+rs
+cS
+$
+on
+e
+e
+eDo~~~~~~~~~~~~~~~~~~(
+C-a
+___
+00
+C
+K
+o
+w
+000 00ca
+2
+<>ee0000
+.#
+co
+Hs
+_
+r M00-0000000000
+9
+_
+d~~~~~0
+~~
+0rI)~O
+OQ
+:c
+t>o
+5;:
+>u>c
+514
+MEMBRANE CURRENT IN NERVE
+values of g9, Tm and -rh shown in Table 2.
+  - (17) and (18) assuming that h.
+  - amm=m,oom,
+/mT=
+(P -m)ITm.
+  - the value of m0O being obtained from -/gN
+on the basis that m.
+  - °tm fm Axon
+10 _
+a
+17
+VV
+9
+v
+0 v
+20
+8
+Ak*
+21
+8-110-0-08-0-05-03-01
+0
+0
+v
+v
+21
+0
+v
+.~~~~~~~~41
+E
+c
+-6
+m
+C 0~~~~
+40
+2
+1
+e
+-110-100 -90 -80 -70 -60 -50-40 -30 -20 -10
+0 +10
+V(rr)
+Fig.
+  - and f,m) determining initial changes in sodium conductance at 60 C.
+  - All values
+for V <0 were obtained by the method illustrated by Fig.
+  - 6 and Table 2; the value at V = 0
+was obtained from the decline in sodium conductance associated with repolarization to the
+resting potential.
+  - The point for V=0 was obtained from what we regard as the most
+reliable estimate of the rate constant determining the decline of sodium con-
+ductance when the membrane is repolarized (Hodgkin & Huxley, 1952b,
+table 1, axon 41).
+  - 7 were drawn according to the
+equations:
+V +25
+um=to1 (V+ 25)/(exp
+10
+-1),
+(20)
+Pm= 4 exp (V/18),
+(21)
+where xm and Pm are expressed in msec-I and V is in mV.
+  - 8 illustrates the relation between m.
+  - and V.
+  - The rate constants for the inactivation process
+were calculated from the expressions
+x,h =hx./,Ir,
+Axon
+o
+17
+m.m
+o
+2
+1*09
+,
+v
+21
+08
+V
+07
+06
+0,5
+04
+03
+02
+01
+-110-100 -90 -80 -70 -60 -50 -40-30-20-10
+0 +10
+V(mV)
+Fig.
+  - The points for V < -30 mV were derived from the analysis described
+in this paper (e.g.
+  - Table 2), while those for V > -30 mV were obtained from
+the results given in a previous paper (Hodgkin & Huxley, 1952 c).
+  - A tem-
+perature coefficient of 3 was assumed and differences in resting potential were
+allowed for by taking the origin at a potential corresponding to h.
+  - The smooth curves in this figure were calculated from the expressions
+ahX=0-07 exp (V/20),
+(23)
+and
+II
+V+301)
+Ph
+--Jrx
+10
++I(24)
+516
+MEMBRANE CURRENT IN NERVE
+517
+The steady state relation between h.0 and V is shown in Fig.
+  - 13
+1.2
+-
+v
+I
+21
+methodA
+1-2
+1-1
+~~~~~~~~~~~~~~V21J
+v 37
+1 10
+;v38
+1 fih,
+1.0
+el
+a
+I*139
+method B
+0-9 -As
+v v
+A*39*
+_ 09
+08
+A
+°
+2 °
+8
+°
+\D
+| V 37
+_ 08
+ul
+A
+o-
+I o 38
+°xh,
+O 0-7
+-
+^
+\I ca 39
+method B
+0-7
+U
+J~~~~~~~~
+Q
+x
+v \ x
+I
+39*0
+0,,06
+-
+A
+0-6
+05
+-
+L_________-
+-
+0-5
+0,4
+It
+0-4
+03 -:
+ah
+0-3
+0,2
+-
+\
+S/
+_02
+01 _
+e
+01
+0
+~~~~~~~~~~~~~~~0
+-110-100-90-80-70-60-50-40-30-20-10
+0
+10
+20
+30
+V (mV)
+Fig.
+  - Rate constants of inactivation (ah and fPh) as functions of membrane potential (V).
+  - The
+values for axons 37 and 39* were displaced by - 1-5 and - 12 mV in order to give h.
+  - = 0-6 at
+V =0.
+  - If V > -30 mV this expression
+approximates to the simple expression used in a previous paper (Hodgkin &
+Huxley, 1952 c), i.e.
+  - h=/(+expVh - V)
+where Vh is about -2 and is the potential at which h., = 0-5.
+  - This is encouraging, but it
+must be mentioned that a physical theory of this kind does not lead to
+satisfactory functions for och and
+h without further ad hoc assumptions.
+  - h,x,
+h.
+  - 10
+-
+,
+10
+0;9
+Axon
+0 9
+O
+38
+08
+o
+39
+08
+07
+&
+39*
+07
+06-
+06
+05
+0_5
+04
+04
+0-3
+0-3
+02-
+02
+0*1
+0
+01
+0
+0
+-100 -90 -80 -70 -60 -50 -40 -30 -20 -10
+0
+10
+20
+30
+40
+50
+V (mV)
+Fig.
+  - Steady state relation between h and V.
+  - Summary of equations and parameters
+We may first collect the equations which give the total membrane current I
+as a function of time and voltage.
+  - These are:
+dV
+I=CMdt +#Kn (V-VK) +9Nam3h (V-VNa) + 91 (VV-)
+(26)
+where
+dnl/dt =ocn(l-n)-Pn,
+(7)
+dm/dt= m(1-m)-P.m,
+(15)
+clh/clt = oc,(l1-h)-# h)
+(16)
+518
+MEMBRANE CURRENT IN NERVE
+and
+yn=001 (V+10)/(exp
+1O -1),
+(12)
+/n3=0.125 exp (V/80),
+(13)
+om=O-l (V+25)/(exp VZ2 -1),
+(20)
+f3m=4 exp (V/18),
+(21)
+Xh= 007 exp (V120),
+(23)
+h=1/(exp V+30 +1).
+  - The conductances to
+K and Na are given by the constants gK and 9NaX together with the dimension-
+less quantities n, m and h, whose variation with time after a change of
+membrane potential is determined by the three subsidiary equations (7), (15)
+and (16).
+  - Potentials are given in mV, current density in IzA/cm2, conductances in
+m.mho/cm2, capacity in juF/cm2, and time in msec.
+  - The solution is
+then obtained directly in terms of the expressions already given for n, m and h
+(eqns.
+  - +
+aI
+-+
+10
+'+
+m
+-434
+A
+0
+1+q
+?
+  - eo-
+eq
+eq
+*
+P-
+co
+CO
+0
+I--
+O
+d
+_
+V
+^4
+Cz wX
+MEMBRANE CURRENT IN NERVE
+a
+~
+5 mV
+120!LA/cm2
+-5 mV
+I20yA/cm2
+-10 mV
+C
+-2O~~~mVI1OOpA
+JCM
+-18 mV
+I1 pA/cm2
+D
+I05uAIcM2
+d
+f00ouAIcM2
+-7m
+-30 mV
+0
+10
+20 msec
+I-I
+I
+-
+.
+  - _
+I
+_
+I
+I
+I
+0
+10
+20 m.ec
+N-130mV~
+oI
+*
+2
+I
+4
+I
+5
+I
+I
+I
+*
+m
+*
+I
+0
+1*2
+3
+4
+5
+6
+msec
+|
+|
+0
+1
+2
+3
+4
+5
+6
+7 msec
+0
+1
+2
+3
+4
+5
+6
+7 msec
+Fig.
+  - Left-hand column: time course of membrane current during voltage clamp, calculated
+for temperature of 40 C from eqn.
+  - Right-hand column: observed time course of
+membrane currents during voltage clamp.
+  - The
+time scale changes between d, D and e, E.
+  - (26) with I = 0 and the initial conditions that V = Vo and
+m, n and h have their resting steady state values, when t =0.
+  - Hence
+1 a V
+r2 ax2
+or
+a
+=2R Va
+(28)
+where I is the membrane current density, a is the radius of the fibre and R2 is
+the specific resistance of the axoplasm.
+  - (26),
+we have
+a a2V
+av
+4V-
+2R2 ax2 =CMat+SEn4 (V-VK) +gNam3h(V-VNa) + gl (V-VI),
+(29)
+the subsidiary equations being unchanged.
+  - During steady propagation, however, the curve of V
+against time at any one position is similar in shape to that of V against distance
+at any one time, and it follows that
+a2v
+1 a2v
+ax2= 2 at2)
+where 0 is the velocity of conduction.
+  - Hence
+a
+d2V
+dV
+2R202 dt2
+CM dt +Kn4 (V-VK)+gNm3kh(V-VNa)+g9(V-V).
+  - It is then found that V goes off towards either + oo or -oo,
+according as the guessed 0 was too small or too large.
+  - The correct value brings
+V back to zero (the resting condition) when the action potential is over.
+  - We suspect that a system which tends to - c
+for
+all values of 0 after an initial negative displacement of V is one which is
+incapable of propagating an action potential.
+  - (2) Estimate n, from no and its backward differences.
+  - (4) Calculate n1 from the equation
+n
+t tdn\
+Idn\
+1 F2 Idn\
+Idn
+nl ~
+=2 {(dti)o + (d-t
+12 L
+(dt)o
+( dt,1jj
+A2(dn/dt) is the second difference of dn/dt; its value at tL has to be estimated.
+  - The last digit retained in V corresponded to microvolts.
+  - Sufficient digits were kept
+in the other variables for the resulting errors in the change of V at each step to be only occasionally
+as large as 1 IV.
+  - 26 shows that the same result is achieved by calculating the action potential at 6.30 C with
+a membrane capacity of#CMj!F/cm2, the unit of time being 1/0 msec.
+  - Introducing
+a quantity K =2R2(VMm/a, this becomes
+dPji =K
+RW( dt + C
+SgKn4 ( V - Vs +
+^M3h ( V - VNJ) + g, ( V - VI)]) *
+(31)
+d$
+1dt
+0'M
+The subsidiary equations (7), (15) and (16), and the a's and ,'s, are the same as for the membrane
+equation.
+  - In practice it is necessary to start with V deviating from zero by a finite
+amount (0.1 mV was used).
+  - The first few values of V, and hence the differences, were obtained as
+follows.
+  - The solution of this equation is V = VoeMt,
+where ,
+is a solution of
+IL" - KjL - Kgo/lm=0.
+  - (32)
+When K has been chosen, ju can thus be found and hence V1, V., etc.
+  - After several runs had been calculated, so that K was known within fairly narrow limits, time
+was saved by starting new runs not from near V = 0 but from a set of values interpolated between
+corresponding points on a run which had gone towards + oo and another which had gone
+towards - o.
+  - From
+these it was possible to derive an estimate of the values (denoted by z) that d2 V/dt2 would have
+taken in a propagated action potential.
+  - (31):
+dV
+1
+K
+t
+(V - VK) +9Nam8h (V - VN.) + 91 (V-Vd} + K
+(33)
+This was repeated until the z's assumed for a particular run agreed with the d2V/dt2's derived
+from the same run.
+  - In this and all subsequent
+figures depolarizations (or negative displacements of V) are plotted upwards.
+  - had become almost identical with the 15 mV action potential, apart from the
+displacement in time.
+  - It will be seen that the general agreement is
+good, as regards amplitude, form and time-scale.
+  - 13 in which a pair of
+curves are plotted on a slower time scale.
+  - This is the
+justification for the differences in time scale between the upper and lower parts
+in Figs.
+  - i
+a?3
+a a?;?a
+14 1414
+1-4 °4
+4
+H
+~~~~~~~~~~~~~~~~~~~~
+A.
+  - 15 compares the calculated pro-
+pagated action potential, at 18.50 C, with experimental records on both fast
+and slow time bases.
+  - B, same solution plotted on slower time scale.
+  - 524), from which
+= V(KaI22ICm),
+(34)
+where 0= conduction
+velocity,
+a = radius
+of axis
+cylinder, 14= specific
+resistance of axoplasm, and C
+= capacity per unit area of membrane.
+  - 15 was obtained, and with the value of Cm (F-01F/cm2)
+that was measured on the fibre from which that record was made.
+  - cm respectively.
+  - Hence the calculated conduction velocity 'is
+(10470 x 0-0238/2 x 35-4 xJ10-6)1 cm/sec = 18-8 in/sec.
+  - The velocity found experimentally in this fibre was 21-2 m/sec.
+  - 528
+MEMBRANE CURRENT IN NERVE
+Impedance changes
+Time course of conductance change.
+  - mV
+A
+m.mho/cm2
+B
+100
+40
+50
+j20
+1._.
+  - The
+broken curve shows the membrane action potential in mV; the continuous curve shows the
+total membrane conductance (gN +g9 +9) as a function of time.
+  - The time scales are the same in A and B.
+  - The time scale is the same inBas inA,
+and the curves have been drawn with the same peak height.
+  - Thus (1) the main rise in conductance begins later than the rise of
+potential; (2) the conductance does not fall to its resting value until late in
+the positive phase; and (3) the peak of the conductance change occurs at
+nearly the same time as the peak of potential.
+  - The exact time relation between
+the peaks depends on the conditions, as can be seen from Table 4.
+  - These authors found that the average membrane resistance at the peak of
+the impedance change was 25 Q.cm2, corresponding to a conductance of
+40 m.mho/cm2.
+  - The peak conductances in our calculated action potentials
+ranged from 31 to 53 m.mho/cm2 according to the conditions, as shown in
+Table 4.
+  - mV
+m.mho/cm2
+903
+80
+-
+-V
+30
+70-
+60 -25
+50
+20
+g
+30
+10,
+20
+10
+gK
+0
+C,
+Fig.
+  - (31) showing components ofmembrane conductance (g) during
+propagated action potential ( - V).
+  - Ionic movements
+Time course ofionic currents.
+  - The time course ofthe components ofmembrane
+current carried by sodium and potassium ions during the calculated pro-
+pagated spike is shown in Fig.
+  - The
+magnitudes of these two terms during steady propagation are-CCMdV/dt and
+(Cm/K) d2V/dt2 respectively, and the manner in which the ionic current is
+divided between them at the different stages of the spike is shown in Fig.
+  - Thus the outward
+flux of sodium ions is INa/(exp (VV-Na) F/RT- 1), and the inward flux of
+potassium ions is -IK/(exp (VK- V) FIRT -1).
+  - Refractory period
+Time course of inactivation and delayed rectification.
+  - According to our theory,
+there are two changes resulting from the depolarization during a spike which
+make the membrane unable to respond to another stimulus until a certain
+time has elapsed.
+  - These are 'inactivation', which reduces the level to which
+mV
+100
+-v
+50_I\
+m.mho/cm2
+06
+gK
+0-5h
+10
+h
+04
+0-3
+*5
+02
+0
+0
+5
+10
+15
+20 msec
+Fig.
+  - Lower curves show time course of
+9E and h during action potential and refractory period.
+  - z
+o
+oo4
+X
+44
+r V
+C)
+-
+g
+S
+o
+4
+0
+0
+4P4
+k
+M
+~~~~C)
+B]
+Ca
+r
+C)
+@
+A~~~~~ t
+15~~C)
+Ca
+@
+i2P
+4,D rO,,
+1i 0=
+.toj
+H
+^~
+C
+Pq°
+COCDC
+k 4
+C
+4
+Ez
+..
+  - 10~~~~~~~~~~1
+b-
+,~4~
+c
+as~
+Ca
+10bo
+Wt
+tH
+H~
+~
+~
+~
+0
+C
+C
+BE4
+533
+A.
+  - After the earliest stimulus the
+-V (mV)
+100 _
+50
+-V (mV)
+100p
+50
+0
+E
+c
+D
+-V (mV)
+100
+- 50
+0O
+msec
+msec
+V
+L
+C 0
+1
+2mOeC
+Fig.
+  - The time scales differ by a factor appropriate to the
+temperature difference.
+  - HUXLEY
+to bring the membrane potential to 30 mV above the resting potential was
+suddenly stopped after passing for a time long compared with all the time-
+constants of the membrane.
+  - (26) was solved with I = 0 and the
+initial conditions that V= + 30 mV, and m, n and h have their steady state
+values for V = + 30 mV, when t =0.
+  - The numbers attached to the curves give the
+initial depolarization in mV (also the quantity of charge applied in m,ucoulomb/cm').
+  - B, response of nerve membrane at 60C to short shocks; the numbers show the charge applied
+in m,ucoulomb/cm2.
+  - The curves have been replotted from records taken at low amplification
+and a relatively high time-base speed.
+  - A spike resulted, and the time course of membrane potential is
+plotted in Fig.
+  - These effects persist for
+an appreciable time so that the membrane potential reaches its resting value
+with a reduced outward potassium current and an increased inward sodium
+current.
+  - The total ionic current is therefore inward at V =0 and the membrane
+undergoes a depolarization which rapidly becomes regenerative.
+  - (26) for
+boundary condition - V = -30 mV for t <0; temperature 60 C.
+  - Time scales differ by a factor appropriate
+to the temperature difference.
+  - 21A and 24,
+but the action potentials are not plotted on a slow enough time base or with
+a large enough vertical scale to show the oscillations which follow the positive
+phase.
+  - Thus, neglecting
+products, squares and higher powers of 81V, Sm, Sn and Ah, the deviations of V,
+m, n and h from their resting values (0, moi, no and ho respectively), eqn.
+  - 518) becomes
+d8V
+8 CM dt +9Kn408V-4gKn'3VK8n +gNa0mhoSV
+- 39NaMohoVNa8m- NanoVNaSh + 9l8V.
+  - 518) becomes
+dSn
+V
+P) Sn-nO a(In+cn)
+-~-=~SV~(c~ +~) Snn0 ~
+SY,
+or
+(ac
+_____
+n_
+(p+on+Pn)8n=n
+no
+,V
+(36)
+where p represents d/dt, the operation of differentiating with respect to
+time.
+  - This can be solved by standard methods for
+any particular time course of the applied current density SI.
+  - The curve shows 8V/8I (plotted upwards) as a function of time.
+  - C, similar records from another fibre enlarged to
+have same time scale.
+  - (26), temperature
+60 C; initial displacement of - V =2 mV.
+  - The agreement must not be taken as evidence that our equations are any-
+thing more than an empirical description of the time-course of the changes in
+permeability to sodium and potassium.
+  - The
+early rise of potassium conductance prevents the potential from getting as close
+to the socdium potential, and from staying there for as long a time, as it should.
+  - Until the break of the applied current, the quantity n has the steady state
+value appropriate to V = + 30 mV, i.e.
+  - The parameters in these equations
+were determined by fitting solutions to the experimental curves relating
+sodium or potassium conductance to time at various membrane potentials.
+  - (h) The properties of the subthreshold oscillations seen in cephalopod axons.
+  - & CuRTIs, H.
+  - H.
+
+[🚧 Next Step] Match variables to most relevant sentence (NLP embedding model)
