@@ -4,77 +4,28 @@ We improve the code by implementing keyword matching (e.g., match whole words, n
 Now, only sentences containing the variable names as whole words will be matched, reducing irrelevant matches.
 
 📑 Matched Sentences (178):
-  - Our experiments suggest that gNa and 9E are functions of time and
-membrane potential, but that ENa, EK, El, CM and g, may be taken as
+  - Our experiments suggest that gNa and 9E are functions of time and membrane potential, but that ENa, EK, El, CM and g, may be taken as
 constant.
-  - In order to decide whether these
-effects are sufficient to account for complicated phenomena such as the action
-potential and refractory period, it is necessary to obtain expressions relating
-MEMBRANE CURRENT IN NERVE
-the sodium and potassium conductances to time and membrane potential.
-  - Outside
-T
-INT
-TK
-ItE
-CM
-~~~~~
-~+
-+
-Inside
-)
-Fig.
-  - RNw and
-RK vary with time and membrane potential; the other components are constant.
-  - At a fixed
-depolarization the sodium current follows a time course whose form is inde-
-pendent of the current through the membrane.
-  - If the sodium concentration
-is such that ENaB<E, the sodium current is inward; if it is reduced until
-ENa > E the current changes in sign but still appears to follow the same time
-course.
-  - Since we now know that the sodium current
-takes an appreciable time to reach its maximum, it is necessary to suppose
-that there are more carriers and that they react or move more slowly.
-  - The proportion of the time that each of the charged molecules spends at the
-inside is determined by exp -E/25 so that the proportion of sites at which all
-six are at the inside is exp - E/4.17.
-  - Details of the mechanism will probably not be settled
-for some time, but it seems difficult to escape the conclusion that the changes
-in ionic permeability depend on the movement of some component of the
-membrane which behaves as though it had a large charge or dipole moment.
-  - Thus
-I = CM d+ i,
-(1)
-5,.4
-MEMBRANE CURRENT IN NERVE
+  - In order to decide whether these effects are sufficient to account for complicated phenomena such as the action potential and refractory period, it is necessary to obtain expressions relating MEMBRANE CURRENT IN NERVE the sodium and potassium conductances to time and membrane potential.
+  - Outside T INT TK ItE CM ~~~~~ ~+ + Inside ) Fig.
+  - RNw and RK vary with time and membrane potential; the other components are constant.
+  - At a fixed depolarization the sodium current follows a time course whose form is inde-pendent of the current through the membrane.
+  - If the sodium concentration is such that ENaB<E, the sodium current is inward; if it is reduced until ENa > E the current changes in sign but still appears to follow the same time course.
+  - Since we now know that the sodium current takes an appreciable time to reach its maximum, it is necessary to suppose that there are more carriers and that they react or move more slowly.
+  - The proportion of the time that each of the charged molecules spends at the inside is determined by exp -E/25 so that the proportion of sites at which all six are at the inside is exp - E/4.17.
+  - Details of the mechanism will probably not be settled for some time, but it seems difficult to escape the conclusion that the changes
+in ionic permeability depend on the movement of some component of the membrane which behaves as though it had a large charge or dipole moment.
+  - Thus I = CM d+ i, (1) 5,.4 MEMBRANE CURRENT IN NERVE
 where
-I
-is the total membrane current density (inward current positive);
-Ii
-is the ionic current density (inward current positive);
-V
-is the displacement of the membrane potential from its resting value
-(depolarization negative);
+I is the total membrane current density (inward current positive);
+Ii is the ionic current density (inward current positive);
+V is the displacement of the membrane potential from its resting value (depolarization negative);
 CM is the membrane capacity per unit area (assumed constant);
-t
-is time.
-  - The justification for this equation is that it is the simplest which can be used
-and that it gives values for the membrane capacity which are independent of
-the magnitude or sign of V and are little affected by the time course of V (see,
-for example, table 1 of Hodgkin et al.
-  - (1)) is provided
-by the similarity between ionic currents measured with dV= 0 and those
-dV~~~~~~~~~d
-calculated from-CM dt with I= 0 (Hodgkin et al.
-  - There is no simple way of
-estimating the error introduced by this approximation, but it is not thought
-to be large since the time course of the capacitative surge was reasonably close
-to that calculated for a perfect condenser (Hodgkin et al.
-  - For practical application it is convenient to write these
-equations in the form
-INa=gNa (V-VNa)
-(3)
+t is time.
+  - The justification for this equation is that it is the simplest which can be used and that it gives values for the membrane capacity which are independent of the magnitude or sign of V and are little affected by the time course of V (see, for example, table 1 of Hodgkin et al.
+  - (1)) is provided by the similarity between ionic currents measured with dV= 0 and those dV~~~~~~~~~d calculated from-CM dt with I= 0 (Hodgkin et al.
+  - There is no simple way of estimating the error introduced by this approximation, but it is not thought to be large since the time course of the capacitative surge was reasonably close to that calculated for a perfect condenser (Hodgkin et al.
+  - For practical application it is convenient to write these equations in the form INa=gNa (V-VNa) (3)
 IK
 9EK (V-VK),
 4
@@ -83,23 +34,10 @@ Itl91 (VV-Vl),
 505,A
 506
 A.
-  - HUXLEY
-where
-V=E-Er,
-VNa = ENa -Er,
-VK=EK-Er,
-VI=Ei-Er,
-and Er is the absolute value of the resting potential.
-  - V VgN, VK and VI can
-then be measured directly as displacements from the resting potential.
-  - The ionic conductances
-The discussion in Part I shows that there is little hope of calculating the
-time course of the sodium and potassium conductances from first principles.
-  - (11) with the following parameters:
-Curve A
-Curve B
-(V= -25 mV)
-(V=0)
+  - HUXLEY where V=E-Er, VNa = ENa -Er, VK=EK-Er, VI=Ei-Er, and Er is the absolute value of the resting potential.
+  - V VgN, VK and VI can then be measured directly as displacements from the resting potential.
+  - The ionic conductances The discussion in Part I shows that there is little hope of calculating the time course of the sodium and potassium conductances from first principles.
+  - (11) with the following parameters: Curve A Curve B (V= -25 mV) (V=0)
 9qKo
 0 09 m.mho/cm2
 7.0 m.mho/Cm2
@@ -108,30 +46,12 @@ Curve B
 009 m.mho/cm'
 n075 msec
 1 1 msec
-At the outset there is the difficulty that both sodium and potassium con-
-ductances increase with a delay when the axon is depolarized but fall with no
-appreciable infiexion when it is repolarized.
-  - The potassium conductance
-The formal assumptions used to describe the potassium conductance are:
-- n4
-(6)
-dn
-ddn=n (1-n)-Bnn,
-(7 )
-where g
-is a constant with the dimensions of conductance/cm2, cx and /n
-are rate constants which vary with voltage but not with time and have
-dimensions of [time]-', n is a dimensionless variable which can vary between
-0 and 1.
-  - n represents the proportion ofthe particles in a certain
-position (for example at the inside of the membrane) and 1- n represents
-the proportion that are somewhere else (for example at the outside of the
-membrane).
-  - In the resting state, defined by V = 0, n has a resting value given by
-anO
-no-n + finO'
-If V is changed suddenly can and n instantly take up values appropriate to the
-new voltage.
+At the outset there is the difficulty that both sodium and potassium con-ductances increase with a delay when the axon is depolarized but fall with no appreciable infiexion when it is repolarized.
+  - The potassium conductance The formal assumptions used to describe the potassium conductance are: - n4 (6)
+dn ddn=n (1-n)-Bnn, (7 ) where g is a constant with the dimensions of conductance/cm2, cx and /n are rate constants which vary with voltage but not with time and have dimensions of [time]-', n is a dimensionless variable which can vary between 0 and 1.
+  - n represents the proportion ofthe particles in a certain position (for example at the inside of the membrane) and 1- n represents
+the proportion that are somewhere else (for example at the outside of the membrane).
+  - In the resting state, defined by V = 0, n has a resting value given by anO no-n + finO' If V is changed suddenly can and n instantly take up values appropriate to the new voltage.
   - The solution of (7) which satisfies the boundary condition that
 n=no when t=O is
 n=na,,-(nn-no) exp (-t/rn),
@@ -188,8 +108,7 @@ s
 0~
 Fig.
   - (11) with 9KO==0 24 m.mho/cm2 and other parameters as shown in Table 1.
-  - The time
-scale applies to all records.
+  - The time scale applies to all records.
   - The rate constants an and f,n.
   - 3
 v
@@ -334,19 +253,10 @@ O/L
 ~,(2
 Pn=0 125 exp (V/80),
 (13)
-where an and fin are given in reciprocal msec and V is the displacement of the
-membrane potential from its resting value in mV.
-  - These expressions should also give a satisfactory formula for the steady
-potassium conductance (gK-) at any membrane potential (V), for this relation
-is implicit in the measurement of xn and fin.
-  - 4 shows that fin is small compared to an over most of the range; we
-therefore do not attach much weight to the curve relating fin to V and have
-used the simplest expression which gave a reasonable fit.
-  - Our equations can therefore be given a qualitative physical
-basis if it is supposed that the variation of oc and fi with membrane potential
-arises from the effect of the;; electric field on the movement of a negatively
-charged particle which rests on the outside of the membrane when V is large
-and positive, and on the inside when it is large and negative.
+where an and fin are given in reciprocal msec and V is the displacement of the membrane potential from its resting value in mV.
+  - These expressions should also give a satisfactory formula for the steady potassium conductance (gK-) at any membrane potential (V), for this relation is implicit in the measurement of xn and fin.
+  - 4 shows that fin is small compared to an over most of the range; we therefore do not attach much weight to the curve relating fin to V and have used the simplest expression which gave a reasonable fit.
+  - Our equations can therefore be given a qualitative physical basis if it is supposed that the variation of oc and fi with membrane potential arises from the effect of the;; electric field on the movement of a negatively charged particle which rests on the outside of the membrane when V is large and positive, and on the inside when it is large and negative.
   - Better agreement might
 510
 MEMBRANE CURRENT IN NERVE
@@ -381,10 +291,8 @@ x
 50
 V(mV)
 Fig.
-  - All values for V < 0 were
-obtained by the method illustrated by Fig.
-  - 3 and Table 1; those for V> 0 were obtained
-from the decline of potassium conductance associated with an increase ofmembrane potential
+  - All values for V < 0 were obtained by the method illustrated by Fig.
+  - 3 and Table 1; those for V> 0 were obtained from the decline of potassium conductance associated with an increase ofmembrane potential
 or from repolarization to the resting potential in choline sea water (e.g.
   - Axon
 1
@@ -445,16 +353,10 @@ dt =
 (1-h)-#,%hi
 (16)
 where 9Na is a constant and the oc's and P's are functions of V but not of t.
-  - m then represents the proportion of
-activating molecules on the inside and 1-rn the proportion on the outside;
-h is the proportion of inactivating molecules on the outside and 1-h the
-proportion on the inside.
-  - a,m or # and Pm or Oh represent the transfer rate
-constants in the two directions.
-  - (15) and (16) which satisfy the boundary conditions
-m=mo and h=ho at t=0 are
-M=m,0-(mo-mo) exrp (tm)(17)
-h=h.-(h.
+  - m then represents the proportion of activating molecules on the inside and 1-rn the proportion on the outside;
+h is the proportion of inactivating molecules on the outside and 1-h the proportion on the inside.
+  - a,m or # and Pm or Oh represent the transfer rate constants in the two directions.
+  - (15) and (16) which satisfy the boundary conditions m=mo and h=ho at t=0 are M=m,0-(mo-mo) exrp (tm)(17) h=h.-(h.
   - -ho) exp (-t/lrh),
 (18)
 where
@@ -467,20 +369,14 @@ and
 Th = I/(h +Ph)-
 In the resting state the sodium conductance is very small compared with the
 value attained during a large depolarization.
-  - Further, inactivation is very nearly
-complete if V < -30 mV so that h., may also be neglected.
-  - The smooth curves are theoretical curves with parameters shown in Table 2;
-A to H drawn from eqn.
+  - Further, inactivation is very nearly complete if V < -30 mV so that h., may also be neglected.
+  - The smooth curves are theoretical curves with parameters shown in Table 2; A to H drawn from eqn.
   - 19, I to L from 14, 17, 18 with gN, = 70*7 m.mho/cm2.
-  - The ordinate
-scales on the right are given in m.mho/cm2.
+  - The ordinate scales on the right are given in m.mho/cm2.
   - The time scale applies to all curves.
-  - ho and is the value which the sodium conductance would
-attain if h remained at its resting level (ho).
-  - (19) was fitted to an experi-
-mental curve by plotting the latter on double log paper and comparing it with
-a similar plot of a family of theoretical curves drawn with different ratios of
-.m to rh.
+  - ho and is the value which the sodium conductance would attain if h remained at its resting level (ho).
+  - (19) was fitted to an experi-mental curve by plotting the latter on double log paper and comparing it with
+a similar plot of a family of theoretical curves drawn with different ratios of .m to rh.
   - Curves A to H in Fig.
   - HUXLEY
 0000~~~M mm
@@ -1106,23 +1002,13 @@ B
 50
 j20
 1._.
-  - The
-broken curve shows the membrane action potential in mV; the continuous curve shows the
-total membrane conductance (gN +g9 +9) as a function of time.
+  - The broken curve shows the membrane action potential in mV; the continuous curve shows the total membrane conductance (gN +g9 +9) as a function of time.
   - The time scales are the same in A and B.
-  - The time scale is the same inBas inA,
-and the curves have been drawn with the same peak height.
-  - Thus (1) the main rise in conductance begins later than the rise of
-potential; (2) the conductance does not fall to its resting value until late in
-the positive phase; and (3) the peak of the conductance change occurs at
-nearly the same time as the peak of potential.
-  - The exact time relation between
-the peaks depends on the conditions, as can be seen from Table 4.
-  - These authors found that the average membrane resistance at the peak of
-the impedance change was 25 Q.cm2, corresponding to a conductance of
-40 m.mho/cm2.
-  - The peak conductances in our calculated action potentials
-ranged from 31 to 53 m.mho/cm2 according to the conditions, as shown in
+  - The time scale is the same inBas inA, and the curves have been drawn with the same peak height.
+  - Thus (1) the main rise in conductance begins later than the rise of potential; (2) the conductance does not fall to its resting value until late in the positive phase; and (3) the peak of the conductance change occurs at nearly the same time as the peak of potential.
+  - The exact time relation between the peaks depends on the conditions, as can be seen from Table 4.
+  - These authors found that the average membrane resistance at the peak of the impedance change was 25 Q.cm2, corresponding to a conductance of 40 m.mho/cm2.
+  - The peak conductances in our calculated action potentials ranged from 31 to 53 m.mho/cm2 according to the conditions, as shown in
 Table 4.
   - mV
 m.mho/cm2
@@ -1144,26 +1030,13 @@ gK
 0
 C,
 Fig.
-  - (31) showing components ofmembrane conductance (g) during
-propagated action potential ( - V).
-  - Ionic movements
-Time course ofionic currents.
-  - The time course ofthe components ofmembrane
-current carried by sodium and potassium ions during the calculated pro-
-pagated spike is shown in Fig.
-  - The
-magnitudes of these two terms during steady propagation are-CCMdV/dt and
-(Cm/K) d2V/dt2 respectively, and the manner in which the ionic current is
-divided between them at the different stages of the spike is shown in Fig.
-  - Thus the outward
-flux of sodium ions is INa/(exp (VV-Na) F/RT- 1), and the inward flux of
-potassium ions is -IK/(exp (VK- V) FIRT -1).
-  - Refractory period
-Time course of inactivation and delayed rectification.
-  - According to our theory,
-there are two changes resulting from the depolarization during a spike which
-make the membrane unable to respond to another stimulus until a certain
-time has elapsed.
+  - (31) showing components ofmembrane conductance (g) during propagated action potential ( - V).
+  - Ionic movements Time course ofionic currents.
+  - The time course ofthe components ofmembrane current carried by sodium and potassium ions during the calculated pro-pagated spike is shown in Fig.
+  - The magnitudes of these two terms during steady propagation are-CCMdV/dt and (Cm/K) d2V/dt2 respectively, and the manner in which the ionic current is divided between them at the different stages of the spike is shown in Fig.
+  - Thus the outward flux of sodium ions is INa/(exp (VV-Na) F/RT- 1), and the inward flux of potassium ions is -IK/(exp (VK- V) FIRT -1).
+  - Refractory period Time course of inactivation and delayed rectification.
+  - According to our theory, there are two changes resulting from the depolarization during a spike which make the membrane unable to respond to another stimulus until a certain time has elapsed.
   - These are 'inactivation', which reduces the level to which
 mV
 100
